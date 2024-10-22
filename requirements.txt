@@ -1,0 +1,7 @@
+python-telegram-bot
+requests
+beautifulsoup4
+apscheduler
+psycopg2
+SQLAlchemy
+pyTelegramBotAPI
