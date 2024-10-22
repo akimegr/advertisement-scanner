@@ -30,6 +30,9 @@ class Scheduler:
         self.scheduler.add_job(self.check_new_ads, 'interval', seconds=self.interval)
         self.scheduler.start()
 
+    #TODO: добавить гет по классу из бд
+    #TODO: на стороне вотчера всю логшику сделать
+    #TODO: чтобы не банило из-за запросов
     def check_new_ads(self):
         links = self.db.get_links()
         unique_links = set()
